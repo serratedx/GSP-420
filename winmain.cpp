@@ -60,6 +60,7 @@ bool initWindow( HINSTANCE hInstance )
 				NULL,												//Menu Used for this app
 				hInstance,											//Application instance
 				NULL);												//No values passed to the window
+
 	//Make sure that the window created is valid
 	if (!wndHandle)
 		return false;
