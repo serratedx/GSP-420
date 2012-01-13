@@ -3,7 +3,7 @@
 HINSTANCE hInst;
 HWND wndHandle;
 
-//firward Declarations
+//forward Declarations
 bool initWindow( HINSTANCE hInstance );
 LRESULT CALLBACK WndProc( HWND, UINT, WPARAM, LPARAM );
 
@@ -49,17 +49,17 @@ bool initWindow( HINSTANCE hInstance )
 
 	//create the window
 	wndHandle = CreateWindow(
-				"DirectXExample",			//Window class to use
-				"DirectXExample",			//The titlebar text
-				WS_OVERLAPPEDWINDOW,		//The window Style
-				CW_USEDEFAULT,				//The start x coordinate
-				CW_USEDEFAULT,				//The start y coordinate
-				640,						//Width
-				480,						//Height
-				NULL,						//Parent window
-				NULL,						//Menu Used for this app
-				hInstance,					//Application instance
-				NULL);						//No values passed to the window
+				"DirectXExample",									//Window class to use
+				"This is a test window for DirectX work",			//The titlebar text
+				WS_OVERLAPPEDWINDOW,								//The window Style
+				CW_USEDEFAULT,										//The start x coordinate
+				CW_USEDEFAULT,										//The start y coordinate
+				640,												//Width
+				480,												//Height
+				NULL,												//Parent window
+				NULL,												//Menu Used for this app
+				hInstance,											//Application instance
+				NULL);												//No values passed to the window
 	//Make sure that the window created is valid
 	if (!wndHandle)
 		return false;
